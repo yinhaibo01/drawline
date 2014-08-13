@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content=" initial-scale=0.80,user-scalable=no" />
+    <script type="text/javascript" src="jquery-1.4.js"></script>
+    <script type="text/javascript" src="DrawLine.js"></script> 
+    <title>Pencil</title>
+
+    <style type="text/css">
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+        }
+         #paint {
+             border: 1px solid gray;
+             cursor: crosshair;
+         }
+    </style>
+</head>
+        
+
+<body>
+    <div id="sketch">
+        <canvas id="paint"  width="480" height="800" style="width: 480px; height: 800px; background-color: rgb(0, 0, 0);"></canvas>
+    </div>
+    <input type="button" id="draw" value="draw"/>
+    <input type="button" id="erase" value="erase"/>
+    <div id ="inp"></div>
+
+</body>
+</html>
